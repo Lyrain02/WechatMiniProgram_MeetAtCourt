@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/search/search",
+    "pages/setting/setting",
     "pages/myActivity/myActivity",
     "pages/register/register",
     "pages/discovery/discovery",
-    "pages/search/search",
+    "pages/idle/idle",
  
     "pages/mine/mine",
     "pages/instrument/instrument",

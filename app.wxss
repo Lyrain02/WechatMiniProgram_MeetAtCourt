@@ -16,3 +16,15 @@
   background-size:100% 100%;
   z-index: -1;
 }
+
+.navigator{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20rpx;
+}
+
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+}

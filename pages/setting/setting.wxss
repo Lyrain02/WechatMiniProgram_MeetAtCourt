@@ -1,0 +1,52 @@
+/* pages/setting/setting.wxss */
+page{
+  background-color: white;
+  width:100%;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx 110rpx;
+  color: #2a5389;
+}
+
+.content .row{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 36rpx;
+  font-weight: 500;
+  padding: 20rpx;
+}
+
+.content .line{
+  height:1rpx;
+  width: 100%;
+  background-color: #2a5389;
+  margin: 5rpx;
+}
+
+.button{
+  direction: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color:#2a5389;
+  margin: 100rpx 0 20rpx 0;
+}
+
+.button .exit{
+  width: 500rpx;
+  background-color: #2a5389;
+  margin: 30rpx;
+}
+
+.button .change{
+  width:500rpx;
+  background-color: #a5cae0;
+}

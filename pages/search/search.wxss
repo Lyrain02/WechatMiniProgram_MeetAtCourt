@@ -30,20 +30,20 @@ page{
 .game .top .left{
   display: flex;
   flex-direction: column;
-  padding: 30rpx 50rpx ;
+  padding: 0rpx 50rpx ;
 }
 
 .game .top .left .date{
-  font-size: 48rpx;
+  font-size: 42rpx;
   font-weight: 500;
-  padding: 20rpx 0;
+  padding: 20rpx 0 0 0;
 }
 
 .game .top .left .row{
   display: flex;
   flex-direction: row;
   justify-items: space-between;
-  padding: 10rpx 20rpx;
+  padding: 20rpx 20rpx 0 20rpx;
 }
 
 .game .top .left .row .first{
@@ -55,20 +55,20 @@ page{
 .game .top .left .row .second{
   color: #2a5389;
   font-size: 36rpx;
+  padding: 0 0 0 20rpx;
 }
 
 .game .top .left .row .img{
-  width: 60rpx;
-  height: 60rpx;
+  width: 55rpx;
+  height: 55rpx;
   border-radius: 50%;
-  padding: 0 30rpx 0 0;
 }
 
 .game .top .right{
   display: flex;
   flex-direction: row;
   justify-items: center;
-  padding:30rpx 60rpx;
+  padding:30rpx 60rpx 0 0;
 }
 
 .game .top .right .flag{
