@@ -1,0 +1,58 @@
+<!--pages/myActivity/myActivity.wxml-->
+<view class="navigator">
+  <image class="icon" bindtap="jumpPage" src="../../images/background/back.png"></image>
+</view>
+<view class="top-view">
+  <view class="user">
+    <text class="name">{{name}}</text>
+    <text class="clue">{{club}}</text>
+  </view>
+  <view class="user">
+    <image class="img" src="{{img}}"></image>
+  </view>
+</view>
+<view calss="bottom-view">
+  <view wx:for="{{itemList}}" wx:key="id">
+
+    <view wx:if="{{item.finish}}" class="item-finish">
+      <view class="row">
+        <text>{{item.type}}</text>
+      </view>
+      <view class="row">
+        <image class="pic" src="../../images/icon02/time.png"></image>
+        <text>{{item.date}}  {{item.time}}</text>
+      </view>
+      <view class="row">
+        <image class="pic" src="../../images/icon02/playground.png"></image>
+        <text>{{item.playground}}</text>
+      </view>
+      <view class="row-reverse">
+        <image class="icon" bindtap="changeShow" data-index="{{index}}" src="../../images/background/icon.png"></image>
+      </view>
+      <view class="row" wx:if="{{item.show}}" bindtap="changeShow">
+        <text>{{item.msg}}</text>
+      </view>
+    </view>
+
+    <view wx:else class="item-unfinish">
+      <view class="row">
+        <text>{{item.type}}</text>
+      </view>
+      <view class="row">
+        <image class="pic" src="../../images/icon02/time.png"></image>
+        <text>{{item.date}}  {{item.time}}</text>
+      </view>
+      <view class="row">
+        <image class="pic" src="../../images/icon02/playground.png"></image>
+        <text>{{item.playground}}</text>
+      </view>
+      <view class="row-reverse">
+        <image class="icon" bindtap="changeShow" data-index="{{index}}" src="../../images/background/icon.png"></image>
+      </view>
+      <view class="row" wx:if="{{item.show}}" bindtap="changeShow">
+        <text>{{item.msg}}</text>
+      </view>
+    </view>
+
+  </view>
+</view>

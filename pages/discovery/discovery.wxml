@@ -1,0 +1,10 @@
+<view class="activity" wx:for="{{activityList}}" wx:key='id'>
+  <view class="poster">
+    <image style="width:100%;height:100%" mode='aspectFill' src="{{item.poster}}"></image>
+  </view>
+  <view class="row">
+    <text class="title">{{item.title}}</text>
+    <image class="icon" bindtap="changeShow" data-index="{{index}}" src="../../images/background/icon.png"></image>
+  </view>
+  <text wx:if="{{item.show}}" class="detail">{{item.detail}}</text>
+</view>

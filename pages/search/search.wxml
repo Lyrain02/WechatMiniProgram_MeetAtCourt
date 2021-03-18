@@ -1,0 +1,32 @@
+<view class="game" wx:for="{{gameList}}" wx:key="id">
+  <view class="top">
+    <view class="left">
+      <view class="row">
+        <text class="date">{{item.date}}</text>
+      </view>
+      <view class="row">
+        <text class="first">场地</text>
+        <text class="second">{{item.playground}}</text>
+      </view>
+      <view class="row">
+        <text class="first">发起人</text>
+        <image class="img" mode="aspectFill" src="{{item.img}}"></image>
+        <text class="second">{{item.name}}</text>
+      </view>
+      <view class="row">
+        <text class="first">报名场地</text>
+        <text class="second">{{item.num}}</text>
+      </view>
+    </view>
+    <view class="right">
+        <image wx:if="{{item.status}}" bindtap="changeStatus" data-index="{{index}}" class="flag" src="../../images/icon01/joined.png"></image>
+        <image wx:else bindtap="changeStatus" data-index="{{index}}" class="flag" src="../../images/icon01/join.png"></image>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="line" bindtap="changShow" data-index="{{index}}">
+      <image class="icon" src="../../images/background/icon.png"></image>
+    </view>
+    <text wx:if="{{item.show}}">{{item.msg}}</text>
+  </view>
+</view>
