@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/setting/setting",
+    "pages/myActivity/myActivity",
+    "pages/register/register",
+    "pages/discovery/discovery",
+    "pages/idle/idle",
+ 
+    "pages/mine/mine",
+    "pages/instrument/instrument",
+    "pages/new/new",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "有球必应",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#708eb7",
+    "selectedColor": "#2a5389",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/icon03/search.png",
+        "iconPath": "images/icon02/search.png",
+        "pagePath": "pages/search/search",
+        "text": "约球"
+      },
+      {
+        "selectedIconPath": "images/icon03/discovery.png",
+        "iconPath": "images/icon02/discovery.png",
+        "pagePath": "pages/discovery/discovery",
+        "text": "发现"
+      },
+      {
+        "selectedIconPath": "images/icon03/new.png",
+        "iconPath": "images/icon02/new.png",
+        "pagePath": "pages/new/new",
+        "text": "新建"
+      },
+      {
+        "selectedIconPath": "images/icon03/instrument.png",
+        "iconPath": "images/icon02/instrument.png",
+        "pagePath": "pages/instrument/instrument",
+        "text": "器械"
+      },
+      {
+        "selectedIconPath": "images/icon03/mine.png",
+        "iconPath": "images/icon02/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

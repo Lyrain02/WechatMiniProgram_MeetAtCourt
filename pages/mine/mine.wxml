@@ -1,0 +1,108 @@
+<view>
+<!-- 上侧部分 -->
+  <view class="top-view">
+  <!-- 用户信息开始 -->
+    <view class="user">
+    <!-- 头像开始 -->
+      <view class="row">
+        <image class="avatar" wx:if="{{userInfo}}" src="{{userInfo.avatarUrl}}"></image>
+        <image class="avatar" wx:else="{{userInfo}}" src="/static/men.jpg"></image>
+      </view>
+    <!-- 头像结束 -->
+
+    <!-- 用户名称开始 -->
+      <view class="name" wx:if="{{userInfo}}">
+        <view bindtap="onClickLogout">{{userInfo.nickName}}</view>
+      </view>
+      <view class="name" wx:else="{{userInfo}}">
+          <navigator url="/pages/auth/auth">登录</navigator>
+          |
+          <navigator url="/pages/auth/auth">注册</navigator>
+      </view>
+    <!-- 用户名称结束 -->
+    <!-- 个人主页开始 -->
+     <view class="site">查看个人主页</view>
+     <!-- 个人主页结束 -->
+    </view>
+     <!-- 关注 粉丝 赞与收藏开始 -->
+    <view class="numbers">
+      <view class="row">
+        <text>0</text>
+        <text>关注</text>
+      </view>
+      <view class="row">
+        <text>0</text>
+        <text>粉丝</text>
+      </view>
+      <view class="row">
+        <text>0</text>
+        <text>赞与收藏</text>
+      </view>
+      <view class="row">
+        <text>0</text>
+        <text>好友动态</text>
+      </view>
+    </view>
+
+  <!-- 关注 粉丝 赞与收藏结束 -->
+  <!-- 用户信息结束 -->
+  </view>
+</view> 
+
+<!-- 待支付开始 -->
+<view class="middle-view">
+  <view class="item">
+    <image src="/static/images/icon/transaction_order1_icon_show.png"></image>
+    <text>待支付</text>
+  </view>
+    <view class="item">
+    <image src="/static/images/icon/transaction_order2_icon_show.png"></image>
+    <text>待支付</text>
+  </view>
+    <view class="item">
+    <image src="/static/images/icon/transaction_order3_icon_show.png"></image>
+    <text>待支付</text>
+  </view>
+    <view class="item">
+    <image src="/static/images/icon/transaction_order4_icon_show.png"></image>
+    <text>待支付</text>
+  </view>
+</view>
+<!-- 待支付结束 -->
+
+<!-- 钱包 优惠券 开始 -->
+<view class="function-view">
+  <view class="item">
+    <view class="left">我的钱包</view> 
+      <view class="right">
+        <text>¥20</text>
+        <image class="go-icon" src='/static/images/icon/to_icon_show_small.png'></image>
+      </view>
+  </view>
+  <view class="item">
+      <view class="left">我的优惠券</view>
+      <view class="right">
+        <text>暂无课用</text>
+        <image class="go-icon" src='/static/images/icon/to_icon_show_small.png'></image>
+      </view>
+    </view>
+    <view class="item">
+      <view class="left">领劵中心</view>
+      <view class="right">
+        <text>你的福利都在这里</text>
+        <image class="go-icon" src='/static/images/icon/to_icon_show_small.png'></image>
+      </view>
+    </view>
+</view>
+<!-- 钱包 优惠券 结束 -->
+
+<!-- 官方微信客服开始 -->
+  <view class="contact-view">
+    <button open-type="contact">
+      <image src="/static/images/icon/wechat_contact_icon_show.png"></image>
+    </button>
+    <button bindtap="onClickCall">
+      <image src="/static/images/icon/phone_contact_icon_show.png"></image>
+    </button>
+  </view>
+  <!-- 官方微信客服结束 -->

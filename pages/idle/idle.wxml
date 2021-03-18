@@ -1,0 +1,3 @@
+<!--pages/idle/idle.wxml-->
+<text>pages/idle/idle.wxml</text>
+<button bindtap="goback">返回</button>

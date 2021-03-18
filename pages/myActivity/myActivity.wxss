@@ -1,0 +1,105 @@
+/* pages/myActivity/myActivity.wxss */
+page{
+  width:100%;
+  background-color: teal;
+}
+
+.navigator{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20rpx;
+}
+
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.top-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding: 20rpx 50rpx 0rpx 50rpx;
+}
+
+.top-view .user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.top-view .user .name{
+  font-size: 42rpx;
+  font-weight: 450;
+}
+
+.top-view .user .club{
+  font-size: 36rpx;
+}
+
+.top-view .user .img{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+}
+
+.bottom-view{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 36rpx;
+  padding: 20rpx;
+}
+
+.item-finish{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-color: #a6cdca;
+  padding: 20rpx;
+  margin:40rpx;
+  border-radius: 20rpx;
+}
+
+.item-unfinish{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2a5389;
+  background-color: white;
+  padding: 20rpx;
+  margin:40rpx;
+  border-radius: 20rpx;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding:10rpx 20rpx;
+}
+
+.row-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.pic{
+  height: 50rpx;
+  width: 50rpx;
+  padding: 0 30rpx 0 0;
+}
+
+.detail{
+  font-size: 32rpx;
+}

@@ -1,0 +1,98 @@
+/* pages/search/search.wxss */
+page{
+  width:100%;
+  background-color: teal;
+}
+
+.game{
+  background-color: white;
+  color: #2a5389;
+  padding: 50 rpx;
+  margin: 50rpx 40rpx;
+  border-radius: 15rpx;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.game .top{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  padding: 10 rpx 30rpx;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game .top .left{
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx 50rpx ;
+}
+
+.game .top .left .date{
+  font-size: 42rpx;
+  font-weight: 500;
+  padding: 20rpx 0 0 0;
+}
+
+.game .top .left .row{
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+  padding: 20rpx 20rpx 0 20rpx;
+}
+
+.game .top .left .row .first{
+  color: #a5cae0;
+  font-size: 36rpx;
+  padding: 0 30rpx 0 0;
+}
+
+.game .top .left .row .second{
+  color: #2a5389;
+  font-size: 36rpx;
+  padding: 0 0 0 20rpx;
+}
+
+.game .top .left .row .img{
+  width: 55rpx;
+  height: 55rpx;
+  border-radius: 50%;
+}
+
+.game .top .right{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  padding:30rpx 60rpx 0 0;
+}
+
+.game .top .right .flag{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.game .bottom{
+  width: 560rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+  padding: 0 30rpx 10rpx 70rpx;
+}
+
+.game .bottom .line{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-items: flex-end;
+}
+
+.game .bottom .line .icon{
+  height: 50rpx;
+  width: 50rpx;
+}
+
+

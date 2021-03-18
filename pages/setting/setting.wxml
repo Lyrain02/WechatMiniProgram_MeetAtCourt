@@ -1,0 +1,27 @@
+<!--pages/setting/setting.wxml-->
+<view class="navigator">
+  <image class="icon" bindtap="jumpPage" src="../../images/background/back.png"></image>
+</view>
+<view class="content">
+  <view class="row">
+    <text bindtap="modify">信 息 修 改</text>
+  </view>
+  <view class="line"></view>
+  <view class="line"></view>
+  <view class="row">
+    <text bindtap="about">关 于 我 们</text>
+  </view>
+  <view class="line"></view>
+  <view class="row">
+    <text bindtap="help">帮 助 与 反 馈</text>
+  </view>
+  <view class="line"></view>
+  <view class="line"></view>
+  <view class="row">
+    <text bindtap="version">版 本 更 新</text>
+  </view>
+  <view class="button">
+    <button class="exit" style="color:white" bindtap="exit">退 出</button>
+    <button class="change" style="color:white" bindtap="switch">切 换 账 号</button>
+  </view>
+</view>
