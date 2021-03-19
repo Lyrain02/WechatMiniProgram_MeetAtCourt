@@ -6,33 +6,33 @@
   基于微信小程序的.js/.json/.wxss/.wxml
 
 ### 页面
-####当前页面
-约球 search
-发现 discovery
-*新建 new
-*器械 instrument
-我的 mine
-注册 register
-我的活动 myActivity
-*我的资产 myProperty
-设置 setting
-
+#### 当前页面
+约球 search  
+发现 discovery  
+*新建 new  
+*器械 instrument  
+我的 mine  
+注册 register  
+我的活动 myActivity  
+*我的资产 myProperty  
+设置 setting  
+  
 注：带*的为未实现的页面
 
-####测试跳转页面
+#### 测试跳转页面
 空闲 idle
 
-####无效页面
-logs
+#### 无效页面
+logs  
 index
 
-###基本设置
-####字体
-标题类 42rpx
-一般字体 36rpx
-描述文本 32rpx
+### 基本设置
+#### 字体
+标题类 42rpx  
+一般字体 36rpx  
+描述文本 32rpx  
 
-####图标
+##### 图标
 跳页图标 50rpx 50rpx
 
 
