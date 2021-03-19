@@ -29,9 +29,9 @@ index
 一般字体 36rpx  
 描述文本 32rpx
 ### 图标
-跳页图标 height: 50rpx; width: 50rpx
-圆角矩形 border-radius: 20rpx
-wx:for元素 margin: 50rpx 40rpx
+跳页图标 height: 50rpx; width: 50rpx  
+圆角矩形 border-radius: 20rpx  
+wx:for元素 margin: 50rpx 40rpx  
 
 ## TO Ef-Sun
 页面整体布局   参照 mine页面
