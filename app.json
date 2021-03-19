@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/mine/mine",
     "pages/search/search",
     "pages/setting/setting",
     "pages/myActivity/myActivity",
@@ -7,8 +8,9 @@
     "pages/discovery/discovery",
     "pages/idle/idle",
  
-    "pages/mine/mine",
+    
     "pages/instrument/instrument",
+    "pages/myProperty/myProperty",
     "pages/new/new",
     "pages/index/index",
     "pages/logs/logs"

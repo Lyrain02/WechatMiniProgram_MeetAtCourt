@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    img: '../../images/background/user.png',
+    name: '海香蕉鱼',
+    club: '飞跃排球协会'
   },
 
   /**
@@ -62,5 +64,20 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  toMyProperty: function(e){
+    wx.navigateTo({
+      url: '../../pages/myProperty/myProperty',
+    })
+  },
+  toMyActivity: function(e){
+    wx.navigateTo({
+      url: '../../pages/myActivity/myActivity',
+    })
+  },
+  toSetting: function(e){
+    wx.navigateTo({
+      url: '../../pages/setting/setting',
+    })
   }
 })

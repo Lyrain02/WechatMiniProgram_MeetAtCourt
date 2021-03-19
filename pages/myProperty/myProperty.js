@@ -1,20 +1,11 @@
-// pages/myActivity/myActivity.js
+// pages/myProperty/myproperty.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    name: '海香蕉鱼',
-    club: '飞跃排球协会',
-    img: '../../images/background/user.png',
-    itemList: [
-      {id: 1, type:'约球', date: '2021.2.19', time: '15:00', playground: '共青场',
-      finish: false, show: false, msg:'这是一个排球活动'},
-      {id: 2, type:'12月主题活动',date: '2020.12.29', time: '20:00', 
-      playground: '大学生活动中心', finish: true, show: false, msg:'12月活动'},
-      {id: 3, type:'约球',date: '2020.12.3', time: '14:00', playground: '共青场', finish: true, show: false, msg:'这是一个足球活动'}
-    ]
+
   },
 
   /**
@@ -72,17 +63,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  jumpPage: function(e){
+  goback: function(e){
     wx.navigateBack({
       delta: 0,
-    })
-  },
-  changeShow: function(e){
-    var index = e.currentTarget.dataset.index;
-    var show = "itemList["+index+"].show";
-    var value = this.data.itemList[index].show;
-    this.setData({
-      [show] :!value
     })
   }
 })

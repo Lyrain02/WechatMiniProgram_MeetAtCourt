@@ -64,8 +64,9 @@ Page({
 
   },
   jumpPage: function(e){
-    wx.switchTab({
-      url: '../../pages/mine/mine',
+    
+    wx.navigateBack({
+      delta: 0,
     })
   },
   modify: function(e){
