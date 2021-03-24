@@ -2,7 +2,7 @@
   <view class="top">
     <view class="left">
       <view class="row">
-        <text class="date">{{item.date}}</text>
+        <text class="date" decode="{{true}}">{{item.date}}&nbsp;&nbsp;{{item.time}}</text>
       </view>
       <view class="row">
         <text class="first">场地</text>
@@ -14,13 +14,28 @@
         <text class="second">{{item.name}}</text>
       </view>
       <view class="row">
-        <text class="first">报名场地</text>
+        <text class="first">报名人数</text>
         <text class="second">{{item.num}}</text>
       </view>
     </view>
     <view class="right">
-        <image wx:if="{{item.status}}" bindtap="changeStatus" data-index="{{index}}" class="flag" src="../../images/icon01/joined.png"></image>
-        <image wx:else bindtap="changeStatus" data-index="{{index}}" class="flag" src="../../images/icon01/join.png"></image>
+        <image wx:if="{{item.status}}" bindtap="withdraw" data-index="{{index}}" class="flag" src="../../images/icon01/joined.png"></image>
+        <image wx:if="{{!item.status}}" bindtap="join" data-index="{{index}}" class="flag" src="../../images/icon01/join.png"></image> 
+        <view class='mask' wx:if='{{item.showModal}}' bindtap='return' data-index="{{index}}"></view>
+        <view class='modal' wx:if='{{item.showModal}}'>
+          <text class='title'>加入</text>
+          <text class='txt'>已选择{{item.date}}日{{item.time}}</text>
+          <text class='txt'>{{item.playground}}约球活动</text>
+          <text class='txt'>是否带球？</text>
+          <view class='row'>
+            <view class='button1' bindtap='withoutBall' data-index="{{index}}">
+              <text>无球</text>
+            </view>
+            <view class='button2' bindtap='withBall' data-index="{{index}}">
+              <text>带球</text>
+            </view>
+          </view>
+        </view>
     </view>
   </view>
   <view class="bottom">

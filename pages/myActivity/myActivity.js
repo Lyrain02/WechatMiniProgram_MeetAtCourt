@@ -84,5 +84,6 @@ Page({
     this.setData({
       [show] :!value
     })
+    console.log("show: "+this.data.itemList[index].show)
   }
 })

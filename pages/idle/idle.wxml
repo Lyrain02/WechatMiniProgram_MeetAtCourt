@@ -1,3 +1,32 @@
 <!--pages/idle/idle.wxml-->
-<text>pages/idle/idle.wxml</text>
-<button bindtap="goback">返回</button>
+<view class="content">
+  <view class="blank"></view>
+  <text>未定义页面</text>
+  <text>仅供跳页/测试使用</text>
+  <view class="blank"></view>
+  <button bindtap="goback">返回</button>
+  <view class="blank"></view>
+  <button bindtap="gohome">回到主页</button>
+  <view class="blank"></view>
+  <view class="item">
+    <image style="height:100%;width:100%" mode="aspectFill" src="../../images/background/back.png"></image>
+  </view>
+</view>
+<!---------------try-------------------->
+
+<button bindtap='join'>加入</button>
+<view class='mask' wx:if='{{showModal}}' bindtap='return'></view>
+<view class='modal' wx:if='{{showModal}}'>
+  <text class='title'>加入</text>
+  <text class='txt'>已选择{{date}}日{{time}}</text>
+  <text class='txt'>{{playground}}约球活动</text>
+  <text class='txt'>是否带球？</text>
+  <view class='row'>
+    <view class='button1' bindtap='withoutBall'>
+      <text>无球</text>
+    </view>
+    <view class='button2' bindtap='withBall'>
+      <text>带球</text>
+    </view>
+  </view>
+</view>

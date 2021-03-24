@@ -79,6 +79,6 @@ Page({
     this.setData({
       [show]: !value
     })
-    //console.log(this.data.gameList[index].status);
+    console.log("show: "+this.data.activityList[index].show);
   }
 })

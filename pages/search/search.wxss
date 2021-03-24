@@ -9,7 +9,7 @@ page{
   color: #2a5389;
   padding: 50 rpx;
   margin: 50rpx 40rpx;
-  border-radius: 15rpx;
+  border-radius: 20rpx;
 
   display: flex;
   flex-direction: column;
@@ -30,13 +30,14 @@ page{
 .game .top .left{
   display: flex;
   flex-direction: column;
-  padding: 0rpx 50rpx ;
+  margin: 0rpx 0rpx 0 60rpx;
 }
 
 .game .top .left .date{
   font-size: 42rpx;
   font-weight: 500;
   padding: 20rpx 0 0 0;
+  letter-spacing:0rpx;
 }
 
 .game .top .left .row{
@@ -49,26 +50,28 @@ page{
 .game .top .left .row .first{
   color: #a5cae0;
   font-size: 36rpx;
-  padding: 0 30rpx 0 0;
 }
 
 .game .top .left .row .second{
   color: #2a5389;
   font-size: 36rpx;
-  padding: 0 0 0 20rpx;
+  margin: 0 0 0 20rpx;
 }
 
 .game .top .left .row .img{
   width: 55rpx;
   height: 55rpx;
   border-radius: 50%;
+  margin: 0 0 0 20rpx;
 }
 
 .game .top .right{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-items: center;
-  padding:30rpx 60rpx 0 0;
+  margin:30rpx 50rpx 0 0;
+  color: #a6cdca;
+  font-size: 32rpx;
 }
 
 .game .top .right .flag{
@@ -95,4 +98,72 @@ page{
   width: 50rpx;
 }
 
+
+
+.mask{
+  height:100%;
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color:black;
+  z-index:10;
+  opacity: 0.75;
+}
+
+.modal{
+  top:30%;
+  left: 40rpx;
+  width: 640rpx;
+  position: fixed;
+  z-index:11;
+  background-color: white;
+  color: #2a5389;
+  padding: 40rpx 10rpx;
+  border-radius: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  width: 500rpx;
+  margin: 30rpx 0 0 0rpx;
+}
+
+.modal .title{
+  font-size: 36rpx;
+  font-weight: 500;
+  margin:0 0 20rpx 0rpx;
+}
+
+.modal .txt{
+  font-size: 30rpx;
+}
+
+.modal .row .button1{
+  font-size:34rpx;
+  border-style: solid;
+  border-width: 5rpx;
+  border-color: #a6cdca;
+  background-color: white;
+  color:#a6cdca;
+  padding:10rpx 40rpx 10rpx 50rpx;
+  border-radius: 10rpx;
+}
+
+.modal .row .button2{
+  font-size:34rpx;
+  border-style: solid;
+  border-color: #fdbf76;
+  background-color: #fdbf76;
+  color:white;
+  padding:10rpx 40rpx 10rpx 50rpx;
+  border-radius: 10rpx;
+}
 
