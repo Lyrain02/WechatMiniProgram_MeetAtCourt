@@ -7,15 +7,15 @@ Page({
   data: {
     gameList:[//status 表示参与活动的状态， show 表示文本信息的展示状态
       {id: 1, date: '2021.2.19', time: '8:00', playground: '共青场', 
-      img: '../../images/background/user1.png',
+      img: '../../images/user/user1.png',
       name: '小A', num: 3, status: true, takeBall:false, show: false, showModal:false,
       msg: '这里又一个新的排球活动，快来打球吧！'},
       {id: 2, date: '2021.1.30', time: '14:00', playground: '二附中操场', 
-      img: '../../images/background/user2.png',
+      img: '../../images/user/user2.png',
       name: '小B', num: 9, status: false, takeBall:false, show:false, showModal:false,
       msg: '这里又一个新的排球活动，快来打球吧！'},
       {id: 3, date: '2020.12.7', time: '18:00', playground: '大活二楼', 
-      img: '../../images/background/user3.png',
+      img: '../../images/user/user3.png',
       name: '小C', num: 12, status: true, takeBall:false, show:false, showModal:false,
       msg: '这里又一个新的排球活动，快来打球吧！'}
     ]

@@ -1,7 +1,13 @@
 <!--pages/myActivity/myActivity.wxml-->
-<view class="navigator">
-  <image class="icon" bindtap="jumpPage" src="../../images/background/back.png"></image>
+<!--back-ground-->
+<view class='container'>
+  <image class='background' src="../../images/myActivity/background.png" mode="aspectFill"></image>
 </view>
+<!--content-->
+<view class="navigator">
+  <image class="return" bindtap="jumpPage" src="../../images/myActivity/return.png"></image>
+</view>
+<!--user info-->
 <view class="top-view">
   <view class="user">
     <text class="name">{{name}}</text>
@@ -11,48 +17,50 @@
     <image class="img" src="{{img}}"></image>
   </view>
 </view>
+<!--activity list-->
 <view calss="bottom-view">
   <view wx:for="{{itemList}}" wx:key="id">
-
+    <!--finished-->
     <view wx:if="{{item.finish}}" class="item-finish">
       <view class="row">
         <text>{{item.type}}</text>
       </view>
       <view class="row">
-        <image class="pic" src="../../images/icon02/time.png"></image>
+        <image class="pic" src="../../images/myActivity/time_finished.png"></image>
         <text>{{item.date}}  {{item.time}}</text>
       </view>
       <view class="row">
-        <image class="pic" src="../../images/icon02/playground.png"></image>
+        <image class="pic" src="../../images/myActivity/playground_finished.png"></image>
         <text>{{item.playground}}</text>
       </view>
       <view class="row-reverse">
-        <image class="icon" bindtap="changeShow" data-index="{{index}}" src="../../images/background/icon.png"></image>
-      </view>
-      <view class="row" wx:if="{{item.show}}" bindtap="changeShow">
+        <image wx:if="{{!item.show}}" class="icon" bindtap="changeShow" data-index="{{index}}" src="../../images/myActivity/icon0_finished.png"></image>
+        <image wx:else class="icon" bindtap="changeShow" data-index="{{index}}" src="../../images/myActivity/icon1_finished.png"></image>
+      </view>    
+      <view class="row" wx:if="{{item.show}}">
         <text>{{item.msg}}</text>
       </view>
     </view>
-
+    <!--unfinished-->
     <view wx:else class="item-unfinish">
       <view class="row">
         <text>{{item.type}}</text>
       </view>
       <view class="row">
-        <image class="pic" src="../../images/icon02/time.png"></image>
+        <image class="pic" src="../../images/myActivity/time_unfinished.png"></image>
         <text>{{item.date}}  {{item.time}}</text>
       </view>
       <view class="row">
-        <image class="pic" src="../../images/icon02/playground.png"></image>
+        <image class="pic" src="../../images/myActivity/playground_unfinished.png"></image>
         <text>{{item.playground}}</text>
       </view>
       <view class="row-reverse">
-        <image class="icon" bindtap="changeShow" data-index="{{index}}" src="../../images/background/icon.png"></image>
+        <image wx:if='{{!item.show}}' class="icon" bindtap="changeShow" data-index="{{index}}" src="../../images/myActivity/icon0_unfinished.png"></image>
+        <image wx:else class="icon" bindtap="changeShow" data-index="{{index}}" src="../../images/myActivity/icon1_unfinished.png"></image>
       </view>
-      <view class="row" wx:if="{{item.show}}" bindtap="changeShow">
+      <view class="row" wx:if="{{item.show}}">
         <text>{{item.msg}}</text>
       </view>
     </view>
-
   </view>
 </view>

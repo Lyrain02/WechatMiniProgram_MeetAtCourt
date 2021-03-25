@@ -1,7 +1,7 @@
 /* pages/search/search.wxss */
 page{
   width:100%;
-  background-color: teal;
+  background-color:#f5f5f5;
 }
 
 .game{
@@ -94,8 +94,9 @@ page{
 }
 
 .game .bottom .line .icon{
-  height: 50rpx;
-  width: 50rpx;
+  height: 30rpx;
+  width: 40rpx;
+  margin: 0 0 20rpx 0;
 }
 
 

@@ -1,7 +1,7 @@
 /* pages/discovery/discovery.wxss */
 page{
   width:100%;
-  background-color: teal;
+  background-color: #f5f5f5;
 }
 
 .activity{
@@ -38,8 +38,8 @@ page{
 
 .activity .row .icon{
   margin-right: 40rpx;
-  height: 50rpx;
-  width: 50rpx;
+  height: 30rpx;
+  width: 40rpx;
 }
 
 .activity .detail{

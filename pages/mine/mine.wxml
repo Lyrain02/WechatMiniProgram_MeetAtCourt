@@ -1,3 +1,8 @@
+<!--back-ground-->
+<view class='container'>
+  <image class='background' src="../../images/mine/background.png" mode="aspectFill"></image>
+</view>
+<!--content-->
 <view class="content">
   <view class="top-view">
     <view class="row">
@@ -12,21 +17,21 @@
   </view>
   <view class="middle-view">
     <view class="row">
-      <image class="icon" src="../../images/icon03/property.png"></image>
+      <image class="icon" src="../../images/mine/property.png"></image>
       <text class="txt" bindtap="toMyProperty">我的资产</text>
     </view>
     <view class="row">
-      <image class="icon" src="../../images/icon03/activity.png"></image>
+      <image class="icon" src="../../images/mine/activity.png"></image>
       <text class="txt" bindtap="toMyActivity">我的活动</text>
     </view>
     <view class="row">
-      <image class="icon" src="../../images/icon03/setting.png"></image>
+      <image class="icon" src="../../images/mine/setting.png"></image>
       <text class="txt" bindtap="toSetting">设置</text>
     </view>
   </view>
   <view class="bottom-view">
     <view class="row">
-      <image class="icon" src="../../images/icon03/calendar.png"></image>
+      <image class="icon" src="../../images/mine/calendar.png"></image>
       <text class="txt">打卡记录</text>
     </view>
     <view class="calendar">

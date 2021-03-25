@@ -7,7 +7,7 @@ Page({
   data: {
     name: '海香蕉鱼',
     club: '飞跃排球协会',
-    img: '../../images/background/user.png',
+    img: '../../images/user/user1.png',
     itemList: [
       {id: 1, type:'约球', date: '2021.2.19', time: '15:00', playground: '共青场',
       finish: false, show: false, msg:'这是一个排球活动'},

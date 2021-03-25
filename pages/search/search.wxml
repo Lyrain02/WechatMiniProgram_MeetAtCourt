@@ -1,3 +1,8 @@
+<!--back-ground-->
+<view class='container'>
+  <image class='background' src="../../images/search/background.png" mode="aspectFill"></image>
+</view>
+<!--content-->
 <view class="game" wx:for="{{gameList}}" wx:key="id">
   <view class="top">
     <view class="left">
@@ -19,8 +24,8 @@
       </view>
     </view>
     <view class="right">
-        <image wx:if="{{item.status}}" bindtap="withdraw" data-index="{{index}}" class="flag" src="../../images/icon01/joined.png"></image>
-        <image wx:if="{{!item.status}}" bindtap="join" data-index="{{index}}" class="flag" src="../../images/icon01/join.png"></image> 
+        <image wx:if="{{item.status}}" bindtap="withdraw" data-index="{{index}}" class="flag" src="../../images/search/joined.png"></image>
+        <image wx:if="{{!item.status}}" bindtap="join" data-index="{{index}}" class="flag" src="../../images/search/unjoin.png"></image> 
         <view class='mask' wx:if='{{item.showModal}}' bindtap='return' data-index="{{index}}"></view>
         <view class='modal' wx:if='{{item.showModal}}'>
           <text class='title'>加入</text>
@@ -40,7 +45,8 @@
   </view>
   <view class="bottom">
     <view class="line" bindtap="changShow" data-index="{{index}}">
-      <image class="icon" src="../../images/background/icon.png"></image>
+      <image wx:if="{{item.show}}" class="icon" src="../../images/search/icon1.png"></image>
+      <image wx:else class="icon" src="../../images/search/icon0.png"></image>
     </view>
     <text wx:if="{{item.show}}">{{item.msg}}</text>
   </view>

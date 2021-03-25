@@ -6,11 +6,11 @@ Page({
    */
   data: {
     activityList:[
-      {id:1, poster:'../../images/background/poster1.png', title: '星座杯', 
+      {id:1, poster:'../../images/discovery/poster1.png', title: '星座杯', 
       detail: '星座杯是排协的传统活动，欢迎大家积极参与，记得报名哦', show: false},
-      {id:2, poster:'../../images/background/poster2.png', title: '阳光体育联赛', 
+      {id:2, poster:'../../images/discovery/poster2.png', title: '阳光体育联赛', 
       detail: '阳光体育联赛是学校举办的运动赛事，欢迎大家积极参与，记得报名哦', show:false},
-      {id:3, poster:'../../images/background/poster3.png', title: '秋季会员总结大会', 
+      {id:3, poster:'../../images/discovery/poster3.png', title: '秋季会员总结大会', 
       detail: '又到了一年一度的总结季了，让我们一起来回顾一下过去一年的精彩吧！',show: false}
     ]
 

@@ -1,7 +1,6 @@
 /* pages/myActivity/myActivity.wxss */
 page{
   width:100%;
-  background-color: teal;
 }
 
 .navigator{
@@ -11,9 +10,14 @@ page{
   padding: 20rpx;
 }
 
+.return{
+  width:30rpx;
+  height:40rpx;
+}
+
 .icon{
-  width: 50rpx;
-  height: 50rpx;
+  width: 40rpx;
+  height: 30rpx;
 }
 
 .top-view{

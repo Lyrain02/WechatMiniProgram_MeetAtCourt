@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    img: '../../images/background/user.png',
+    img: '../../images/user/user1.png',
     name: '海香蕉鱼',
     club: '飞跃排球协会'
   },
