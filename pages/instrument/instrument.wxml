@@ -1,2 +1,5 @@
 
+<view class='container'>
+  <image class='background' src="../../images/background/instrument.png" mode="aspectFill"></image>
+</view>
 <text>instrument page</text>

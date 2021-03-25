@@ -1,12 +1,10 @@
 <!--pages/myActivity/myActivity.wxml-->
 <!--back-ground-->
 <view class='container'>
-  <image class='background' src="../../images/myActivity/background.png" mode="aspectFill"></image>
+  <image class='background' src="../../images/background/myActivity.png" mode="aspectFill"></image>
 </view>
 <!--content-->
-<view class="navigator">
-  <image class="return" bindtap="jumpPage" src="../../images/myActivity/return.png"></image>
-</view>
+
 <!--user info-->
 <view class="top-view">
   <view class="user">

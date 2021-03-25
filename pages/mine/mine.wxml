@@ -1,6 +1,6 @@
 <!--back-ground-->
 <view class='container'>
-  <image class='background' src="../../images/mine/background.png" mode="aspectFill"></image>
+  <image class='background' src="../../images/background/mine.png" mode="aspectFill"></image>
 </view>
 <!--content-->
 <view class="content">
@@ -21,7 +21,7 @@
       <text class="txt" bindtap="toMyProperty">我的资产</text>
     </view>
     <view class="row">
-      <image class="icon" src="../../images/mine/activity.png"></image>
+      <image class="icon2" src="../../images/mine/activity.png"></image>
       <text class="txt" bindtap="toMyActivity">我的活动</text>
     </view>
     <view class="row">

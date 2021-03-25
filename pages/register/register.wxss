@@ -32,8 +32,8 @@ page{
 }
 
 .form .row-group .image{
-  width: 80rpx;
-  height: 80rpx;
+  width: 60rpx;
+  height: 60rpx;
 }
 
 .form .row-group .txt{

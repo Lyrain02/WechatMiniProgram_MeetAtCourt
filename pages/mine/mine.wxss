@@ -79,6 +79,14 @@ page{
   width: 55rpx;
   height: 55rpx;
   margin: 0 40rpx 0 0;
+
+}
+
+.middle-view .row .icon2{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 35rpx 0 0;
+
 }
 
 .middle-view .row .txt{

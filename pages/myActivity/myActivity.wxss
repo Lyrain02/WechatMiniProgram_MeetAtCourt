@@ -26,6 +26,7 @@ page{
   justify-content: space-between;
   color: white;
   padding: 20rpx 50rpx 0rpx 50rpx;
+  margin: 80rpx 0 0 0;
 }
 
 .top-view .user{

@@ -29,32 +29,32 @@
     "borderStyle": "white",
     "list": [
       {
-        "selectedIconPath": "images/icon03/search.png",
-        "iconPath": "images/icon02/search.png",
+        "selectedIconPath": "images/tabbar/search1.png",
+        "iconPath": "images/tabbar/search0.png",
         "pagePath": "pages/search/search",
         "text": "约球"
       },
       {
-        "selectedIconPath": "images/icon03/discovery.png",
-        "iconPath": "images/icon02/discovery.png",
+        "selectedIconPath": "images/tabbar/discovery1.png",
+        "iconPath": "images/tabbar/discovery0.png",
         "pagePath": "pages/discovery/discovery",
         "text": "发现"
       },
       {
-        "selectedIconPath": "images/icon03/new.png",
-        "iconPath": "images/icon02/new.png",
+        "selectedIconPath": "images/tabbar/new1.png",
+        "iconPath": "images/tabbar/new0.png",
         "pagePath": "pages/new/new",
         "text": "新建"
       },
       {
-        "selectedIconPath": "images/icon03/instrument.png",
-        "iconPath": "images/icon02/instrument.png",
+        "selectedIconPath": "images/tabbar/instrument1.png",
+        "iconPath": "images/tabbar/instrument0.png",
         "pagePath": "pages/instrument/instrument",
         "text": "器械"
       },
       {
-        "selectedIconPath": "images/icon03/mine.png",
-        "iconPath": "images/icon02/mine.png",
+        "selectedIconPath": "images/tabbar/mine1.png",
+        "iconPath": "images/tabbar/mine0.png",
         "pagePath": "pages/mine/mine",
         "text": "我的"
       }

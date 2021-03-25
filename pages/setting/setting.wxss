@@ -9,7 +9,7 @@ page{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20rpx 110rpx;
+  margin: 150rpx 110rpx;
   color: #2a5389;
 }
 

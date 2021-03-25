@@ -1,6 +1,6 @@
 <!--pages/setting/setting.wxml-->
-<view class="navigator">
-  <image class="icon" bindtap="jumpPage" src="../../images/background/back.png"></image>
+<view class='container'>
+  <image class='background' src="../../images/background/setting.png" mode="aspectFill"></image>
 </view>
 <view class="content">
   <view class="row">

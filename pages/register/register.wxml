@@ -1,6 +1,6 @@
 <!--back-ground-->
 <view class='container'>
-  <image class='background' src="../../images/register/background.png" mode="aspectFill"></image>
+  <image class='background' src="../../images/background/register.png" mode="aspectFill"></image>
 </view>
 <!--content-->
 <!--user image-->
