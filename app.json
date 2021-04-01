@@ -1,12 +1,12 @@
 {
   "pages": [
-    
+    "pages/discovery/discovery",
     "pages/search/search",
     "pages/mine/mine",
     "pages/setting/setting",
     "pages/myActivity/myActivity",
     "pages/register/register",
-    "pages/discovery/discovery",
+    
     "pages/idle/idle",
     
     

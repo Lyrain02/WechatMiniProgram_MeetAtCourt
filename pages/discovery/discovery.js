@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    activityList:[
+    activityList:[ ],
+    preList:[
       {id:1, poster:'../../images/discovery/poster1.png', title: '星座杯', 
       detail: '星座杯是排协的传统活动，欢迎大家积极参与，记得报名哦', show: false},
       {id:2, poster:'../../images/discovery/poster2.png', title: '阳光体育联赛', 
@@ -34,7 +35,38 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    
+    var url='http://106.15.38.14'
+    var that=this
+    var offset = that.data.activityList.length
+    wx.request({
+      url: 'http://106.15.38.14:5000/campaign/' + offset,
+      method:'GET',
 
+      success: function(res) {
+        //console.log(res.data);
+        //console.log(res.data[0])
+        for(var i=0;i<res.data.length;i++)
+        {
+          console.log(that.data)
+          var newarray = {
+            id:res.data[i].campaign_id,
+            poster:url+res.data[i].campaign_image,
+            title:res.data[i].campaign_name,
+            detail:res.data[i].campaign_note,
+            show:false
+          };
+                  
+          
+          that.data.activityList = that.data.activityList.concat(newarray);
+          that.setData({
+            activityList: that.data.activityList
+          });   
+          // 调试时打开该语句
+          console.log(that.data.activityList);
+        }
+      }
+    })
   },
 
   /**
