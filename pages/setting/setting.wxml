@@ -1,6 +1,7 @@
 <!--pages/setting/setting.wxml-->
 <view class='container'>
-  <image class='background' src="../../images/background/setting.png" mode="aspectFill"></image>
+  <!-- <image class='background' src="../../images/background/setting.png" mode="aspectFill"></image> -->
+  <image class='background' src="http://106.15.38.14/images/background/setting.png" mode="aspectFill"></image>
 </view>
 <view class="content">
   <view class="row">

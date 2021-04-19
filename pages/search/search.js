@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    gameList:[//status 表示参与活动的状态， show 表示文本信息的展示状态
+    gameList:[],
+    activityList:[//status 表示参与活动的状态， show 表示文本信息的展示状态
       {id: 1, date: '2021.2.19', time: '8:00', playground: '共青场', 
       img: '../../images/user/user1.png',
       name: '小A', num: 3, status: true, takeBall:false, show: false, showModal:false,
@@ -40,6 +41,46 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    var url='http://106.15.38.14'
+    var that=this
+    var offset = that.data.gameList.length
+    var util = require('../../utils/util.js')
+    wx.request({
+      url: 'http://106.15.38.14:5000/yueqiu/' + offset,
+      method:'GET',
+
+      success: function(res) {
+        console.log(res.data);
+        console.log(res.data[0])
+        for(var i=0;i<res.data.length;i++)
+        {
+          console.log(that.data)
+          var time=new Date(res.data[i].yueqiu_time)
+          var newarray = {
+            id:res.data[i].yueqiu_id,
+            date:util.formatDate(time),
+            time:util.formatClock(time),
+            playground:res.data[i].yueqiu_location,
+            img:res.data[i].member_id,
+            name:res.data[i].member_id,
+            num:res.data[i].yueqiu_number,
+            status: true,
+            takeBall:false,
+            show:false,
+            showModal:false,
+            msg:res.data[i].yueqiu_note
+          };
+                  
+          
+          that.data.gameList = that.data.gameList.concat(newarray);
+          that.setData({
+            gameList: that.data.gameList
+          });   
+          // 调试时打开该语句
+          console.log(that.data.gameList);
+        }
+      }
+    })
 
   },
 

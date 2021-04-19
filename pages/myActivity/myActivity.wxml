@@ -1,7 +1,8 @@
 <!--pages/myActivity/myActivity.wxml-->
 <!--back-ground-->
 <view class='container'>
-  <image class='background' src="../../images/background/myActivity.png" mode="aspectFill"></image>
+  <image class='background' src="http://106.15.38.14/images/background/myActivity.png" mode="aspectFill"></image>
+  <!-- <image class='background' src="../../images/background/myActivity.png" mode="aspectFill"></image> -->
 </view>
 <!--content-->
 

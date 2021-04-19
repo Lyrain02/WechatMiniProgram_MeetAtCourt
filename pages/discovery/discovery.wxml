@@ -1,6 +1,7 @@
 <!--back-ground-->
 <view class='container'>
-  <image class='background' src="../../images/background/discovery.png" mode="aspectFill"></image>
+  <image class='background' src="http://106.15.38.14/images/background/discovery.png" mode="aspectFill"></image>
+  <!-- <image class='background' src="../../images/background/discovery.png" mode="aspectFill"></image> -->
 </view>
 <!--content-->
 <view class="activity" wx:for="{{activityList}}" wx:key='id'>
